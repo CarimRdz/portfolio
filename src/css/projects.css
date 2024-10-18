@@ -1,0 +1,25 @@
+.project-card {
+  min-width: 200px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-card .project-card-tech {
+  align-self: flex-end;
+  padding: 8px;
+}
+.project-card .project-card-info {
+  padding: 15px;
+  border-bottom: 1px solid var(--thrd-color);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.project-card h3 {
+  text-align: center;
+  border-top: 2px solid var(--thrd-color);
+  border-bottom: 2px solid var(--thrd-color);
+  padding: 3px 0;
+}
+.project-card a {
+  align-self: center;
+}/*# sourceMappingURL=projects.css.map */

@@ -1,0 +1,69 @@
+.menu, .menu-resp {
+  background-color: var(--fts-color);
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 100px 50px;
+  gap: 45px;
+}
+.menu .menu-box, .menu-resp .menu-box {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.menu .menu-box .menu-bio, .menu-resp .menu-box .menu-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.menu .menu-box .menu-list, .menu-resp .menu-box .menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.menu .menu-box .menu-list .menu-list-item, .menu-resp .menu-box .menu-list .menu-list-item {
+  color: var(--scnd-color);
+}
+.menu .menu-box .menu-list .menu-list-item:hover, .menu .menu-box .menu-list .menu-list-item-On, .menu-resp .menu-box .menu-list .menu-list-item:hover, .menu-resp .menu-box .menu-list .menu-list-item-On {
+  color: var(--thrd-color);
+  padding-left: 5px;
+}
+.menu .menu-icon, .menu-resp .menu-icon {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    padding: 100px 25px;
+  }
+}
+@media (max-width: 767px) {
+  .menu {
+    padding: 10px;
+    width: 5%;
+  }
+  .menu .menu-box {
+    display: none;
+  }
+  .menu .menu-icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+  .menu-resp {
+    height: 100%;
+    padding: 100px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    z-index: 1000;
+  }
+  .menu-resp .menu-icon {
+    display: none;
+  }
+}/*# sourceMappingURL=navbar.css.map */

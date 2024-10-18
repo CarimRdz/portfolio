@@ -1,0 +1,132 @@
+:root{
+    --fts-color: #023047; //003C43
+    --thrd-color: #9DB2BF; // 77B0AA
+    --scnd-color: #526D82; // 135D66
+    --font-color:#DDE6ED; // E3FEF7
+
+    --font-text-size: clamp(1.5rem, 2.5vw, 1rem);
+    //bg #20252c
+    //bg 2 #272c35
+    //bg 3 #474c52
+    //#3c424c
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      
+    }
+    to {
+      opacity: 1;
+      
+    }
+  }
+
+*{
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.bold{
+    color: var(--fts-color);
+}
+
+p,h1,h2,h3,a,span,li{
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--font-color);
+}
+
+.border-box{
+    border: 2px solid var(--thrd-color);
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--scnd-color);
+}
+.content-body{
+    width: 80%;
+    padding: 150px 100px;
+    
+}
+.views-section{
+    animation: fadeIn 1.2s ease-in;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: auto;
+    .views-section-cards{
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
+
+p,a{
+    font-size: clamp(0.8rem,2vw,1.2rem);
+    text-wrap: pretty;
+}
+
+h1{
+    font-size: clamp(1.4rem,2vw,2rem);
+    
+}
+h2{
+    font-size: clamp(1.2rem,2vw,1.8rem);
+}
+h3{
+    font-size: clamp(1rem,2vw,1.6rem);
+}
+h1,h2,h3{
+    text-wrap: balance;
+}
+.pointer:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 1160px) {
+    .views-section{
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1060px) {
+    .content-body{
+        width: 85%;
+        padding: 150px 50px;
+        .views-section{
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
+}
+@media (max-width: 767px) {
+    .content-body{
+        width: 95%;
+        padding: 150px 25px;
+    }
+    .views-section{
+        width: 100%;
+        height: 100%;
+        
+    }
+}

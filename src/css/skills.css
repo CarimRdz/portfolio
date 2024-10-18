@@ -1,0 +1,19 @@
+.skill-card {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.skill-card .skill-card-title, .skill-card .skill-card-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.skill-card .skill-card-title {
+  padding: 5px;
+  border-bottom: 2px solid var(--thrd-color);
+}
+.skill-card .skill-card-list {
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+}/*# sourceMappingURL=skills.css.map */
